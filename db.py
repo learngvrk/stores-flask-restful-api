@@ -5,6 +5,7 @@ from app import app
 
 db = SQLAlchemy()
 
+'''
 if app.config['SQLALCHEMY_DATABASE_URI'].contains('postgres'):
     try:
         @event.listens_for(Engine, "connect")
@@ -14,3 +15,4 @@ if app.config['SQLALCHEMY_DATABASE_URI'].contains('postgres'):
             cursor.close()
     except Exception:
         pass
+'''
